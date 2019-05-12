@@ -82,25 +82,25 @@ export default {
 
   &.star-36 {
     .star-item {
-      width: 20px;
-      height: 20px;
-      margin-right: 22px;
-      background-size: 20px 20px;
+      width: 15px
+      height: 15px
+      margin-right: 6px
+      background-size: 15px 15px
 
       &:last-child {
         margin-right: 0;
       }
 
       &.on {
-        bg-image('star48_on');
+        bg-image('star36_on');
       }
 
       &.half {
-        bg-image('star48_half');
+        bg-image('star36_half');
       }
 
       &.off {
-        bg-image('star48_off');
+        bg-image('star36_off');
       }
     }
   }

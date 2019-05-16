@@ -64,13 +64,16 @@
         if (!event._constructed) {
           return;
         }
-        this.$emit('select', type);
+        this.selectType = type;
+        // 父子组件之间的通信
+        this.$dispatch('ratingtype.select', type);
       },
       toggleContent (event) {
         if (!event._constructed) {
           return;
         }
-        this.$emit('toggle');
+        this.onlyContent = !this.onlyContent;
+        this.$dispatch('content.toggle', this.onlyContent);
       }
     }
   };

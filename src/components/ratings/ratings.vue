@@ -96,6 +96,7 @@ export default {
     });
   },
   filters: {
+    // 时间格式化
     formatDate (time) {
       let date = new Date(time);
       return formatDate(date, 'yyyy-MM-dd hh:mm');
